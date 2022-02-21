@@ -1,0 +1,29 @@
+{
+  "name": "widgets-cli",
+  "version": "1.0.0",
+  "description": "A tool to fetch widgets, To be used with react-dashboard-pro",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanguandong/widgets-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuanguandong/widgets-cli/issues"
+  },
+  "homepage": "https://github.com/yuanguandong/widgets-cli#readme",
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "figlet": "^1.5.2",
+    "git-pull-or-clone": "^2.0.1",
+    "go-git-it": "^1.0.0",
+    "inquirer": "^8.2.0",
+    "ora": "^4.1.1"
+  }
+}
