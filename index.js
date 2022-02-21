@@ -47,7 +47,7 @@ const actions = {
     try {
       await download(repo, dir);
       process.succeed();
-      log(`✅ Download Success`);
+      log(`✅ Download All Widgets Success`);
     } catch (e) {
       log(e, "red");
       process.fail();
@@ -80,7 +80,7 @@ const actions = {
     try {
       goGitIt(`${repoUrl}/${widgetNameAnswer.name}`, dir);
       process.succeed();
-      log(`✅ Download Success`);
+      log(`✅ Download ${widgetNameAnswer.name} Success`);
     } catch (e) {
       log(e, "red");
       log("There may be a network problem, please try again later");

@@ -1,13 +1,13 @@
 # Widget-Cli
 A tool to fetch widgets, To be used with react-dashboard-pro
 
-## usage
+## Install
 ```bash
 npm i widgets-cli -D
 ```
-
+## Usage
 ```bash
-widget-cli
+npx widget-cli
 ```
 
 
