@@ -13,7 +13,7 @@ const goGitIt = require("go-git-it");
 
 //仓库地址
 const repo = "git@github.com:yuanguandong/react-keyevent.git";
-const repoUrl = "https://github.com/yuanguandong/react-widgets/tree/master";
+const repoUrl = "https://github.com/yuanguandong/react-widgets/tree/master/widgets";
 
 //清屏
 clear();
@@ -45,7 +45,8 @@ const actions = {
     const process = ora(chalk["gray"](`${dir} downloading.....`));
     process.start();
     try {
-      await download(repo, dir);
+      // await download(repo, dir);
+      goGitIt(`${repoUrl}`, dir);
       process.succeed();
       log(`✅ Download All Widgets Success`);
     } catch (e) {

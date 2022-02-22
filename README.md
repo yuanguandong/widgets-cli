@@ -20,7 +20,7 @@ npx widget-cli
                                                                                 
 ? Action 
   1) fetchAll (下载所有的widget)
-  2) fetchOne (根据widget名称下载某一个)
+  2) fetchOne (根据widget ID下载指定一个)
   3) exit （退出）
   Answer: 
 
