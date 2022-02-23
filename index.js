@@ -30,37 +30,12 @@ log(
 
 //工具方法
 const actions = {
-  //拉取所有
-  fetchAll: async () => {
-    // 项⽬名称
-    const answer = await inquirer.prompt([
-      {
-        type: "input",
-        message: "DirPath:",
-        name: "name",
-        default: "widgets",
-      },
-    ]);
-    const dir = resolve(`./${answer.name}`);
-    const process = ora(chalk["gray"](`${dir} downloading.....`));
-    process.start();
-    try {
-      // await download(repo, dir);
-      goGitIt(`${repoUrl}`, dir);
-      process.succeed();
-      log(`✅ Download All Widgets Success`);
-    } catch (e) {
-      log(e, "red");
-      process.fail();
-    }
-    tool(answer.name, dir);
-  },
   fetchOne: async () => {
     // widget名称
     const widgetNameAnswer = await inquirer.prompt([
       {
         type: "input",
-        message: "widgetName:",
+        message: "widget ID:",
         name: "name",
         default: "clock", 
       },
@@ -88,6 +63,31 @@ const actions = {
       process.fail();
     }
     tool(dirAnswer.name, dir);
+  },
+  //拉取所有
+  fetchAll: async () => {
+    // 项⽬名称
+    const answer = await inquirer.prompt([
+      {
+        type: "input",
+        message: "DirPath:",
+        name: "name",
+        default: "widgets",
+      },
+    ]);
+    const dir = resolve(`./${answer.name}`);
+    const process = ora(chalk["gray"](`${dir} downloading.....`));
+    process.start();
+    try {
+      // await download(repo, dir);
+      goGitIt(`${repoUrl}`, dir);
+      process.succeed();
+      log(`✅ Download All Widgets Success`);
+    } catch (e) {
+      log(e, "red");
+      process.fail();
+    }
+    tool(answer.name, dir);
   },
   exit: async ({ dir, name }) => {
     log("🖐  Bye Bye!", "yellow");
