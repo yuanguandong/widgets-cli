@@ -1,6 +1,6 @@
 {
   "name": "widgets-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A tool to fetch widgets, To be used with react-dashboard-pro",
   "main": "index.js",
   "bin": "./index.js",

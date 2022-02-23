@@ -72,7 +72,7 @@ const actions = {
         type: "input",
         message: "DirPath:",
         name: "name",
-        default: "widgets",
+        default: ".",
       },
     ]);
     const dir = resolve(`./${answer.name}`);
