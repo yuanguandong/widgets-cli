@@ -29,3 +29,6 @@ npx widget-cli
 
 ## react-dashboard-pro
 https://www.npmjs.com/package/react-dashboard-pro
+
+## reacts-widget
+https://yuanguandong.github.io/react-widgets
